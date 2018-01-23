@@ -1,4 +1,4 @@
-export default (props) => {
-        return props.expenses.map((expense) => expense.amount)
+export default (expenses) => {
+        return expenses.map((expense) => expense.amount)
         .reduce((acc,current) => acc + current, 0);
 }       
