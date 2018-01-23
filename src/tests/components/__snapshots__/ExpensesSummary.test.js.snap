@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should generate summary for 0 or multiple expenses 1`] = `
+<h3>
+  Viewing 
+  3
+   expenses totalling 
+  <Component
+    expenses={
+      Array [
+        Object {
+          "amount": 2500,
+          "createdAt": 0,
+          "description": "Rice",
+          "id": "1",
+          "note": "",
+        },
+        Object {
+          "amount": 500,
+          "createdAt": 345600000,
+          "description": "Book",
+          "id": "2",
+          "note": "",
+        },
+        Object {
+          "amount": 25000,
+          "createdAt": -345600000,
+          "description": "Shoes",
+          "id": "3",
+          "note": "",
+        },
+      ]
+    }
+  />
+</h3>
+`;
+
+exports[`should generate summary for 1 expense 1`] = `
+<h3>
+  Viewing 
+   expenses totalling 
+  <Component
+    expenses={
+      Object {
+        "amount": 500,
+        "createdAt": 345600000,
+        "description": "Book",
+        "id": "2",
+        "note": "",
+      }
+    }
+  />
+</h3>
+`;
