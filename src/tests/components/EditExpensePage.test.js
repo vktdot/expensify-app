@@ -15,15 +15,15 @@ test('should render edit expense page', () => {
 })
 
 test('should handle edit expense', () => {
-    const editExpense = jest.fn()
+    const startEditExpense = jest.fn()
     const history = {push: jest.fn()}
-    const wrapper = shallow(<EditExpensePage editExpense={editExpense} 
+    const wrapper = shallow(<EditExpensePage startEditExpense={startEditExpense} 
         history = {history}
         expense = {expenses[2]}
         />)
     wrapper.find('ExpenseForm').prop('onSubmit')(expenses[2])
     expect(history.push).toHaveBeenLastCalledWith('/')
-    expect(editExpense).toHaveBeenLastCalledWith(expenses[2].id, expenses[2])
+    expect(startEditExpense).toHaveBeenLastCalledWith(expenses[2].id, expenses[2])
 })
 
 test('should handle remove expense', () =>{
