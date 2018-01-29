@@ -1,21 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should generate summary for 0 or multiple expenses 1`] = `
-<h3>
-  Viewing 
-   
-  expenses
-   totalling 
-  $0.00
-</h3>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+         
+         
+      </span>
+      expenses
+       totalling 
+      <span>
+         
+        $0.00
+         
+      </span>
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`should generate summary for 1 expense 1`] = `
-<h3>
-  Viewing 
-   
-  expenses
-   totalling 
-  $0.00
-</h3>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+         
+         
+      </span>
+      expenses
+       totalling 
+      <span>
+         
+        $0.00
+         
+      </span>
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</div>
 `;
